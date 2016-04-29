@@ -1,3 +1,31 @@
 * {
 	box-sizing: border-box;
 }
+
+
+.outside_board {
+    height: 22em;
+    width: 22em;
+    overflow: hidden;
+    }
+
+.board {
+    width: 22.5em;
+    height: 22.5em;
+    border-spacing:0;
+
+/*these only seem to work set as px, is there a reason?*/
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+td {
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    font-size: 4em;
+    text-transform: uppercase;
+    height: 2em;
+    width: 2em;
+    border-collapse: collapse;
+    color: black;
+}
