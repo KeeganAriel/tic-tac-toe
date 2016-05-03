@@ -9,32 +9,18 @@ body {
 	text-align: center;
 }
 
-.outside_board {
-    height: 22em;
-    width: 22em;
-    overflow: hidden;
-    margin: auto;
-    text-align: left;
-    }
 
 .board {
     width: 22.5em;
     height: 22.5em;
     border-spacing:0;
-    border: 1px solid black;
-
-/*these only seem to work set as px, is there a reason?*/
-    margin-left: -2px;
-    margin-top: -2px;
-}
-
-.center {
     margin-left:auto; 
     margin-right:auto;
-  }
+}
 
 
-td {
+
+.square {
     text-align: center;
     font-family: 'Coming Soon', cursive;
     font-size: 4em;
@@ -43,4 +29,14 @@ td {
     width: 2em;
     border-collapse: collapse;
     color: black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.square:last-child {
+    border-right: none;
+}
+
+.row:last-child .square {
+    border-bottom: none;
 }
