@@ -32,24 +32,32 @@ $(document).ready(function(){
  		var firstRow = $('.row:first-child .square').text();
  		if (firstRow === "XXX") {
  			setMessage("X won!");
+ 			$(".row:first-child").addClass('strikeout');
  		} else if (firstRow === "OOO") {
  			setMessage("O WON!");
+ 			$(".row:first-child").addClass('strikeout');
  		}
 
  		var lastRow = $('.row:last-child .square').text();
  		if (lastRow === "XXX") {
  			setMessage("X won!");
+ 			$('.row:last-child').addClass('strikeout');
  		} else if (lastRow === "OOO") {
  			setMessage("O WON!");
+ 			$('.row:last-child').addClass('strikeout');
  		}
 
  		var middleRow = $('.row:nth-child(2) .square').text();
  		if (middleRow === "XXX") {
  			setMessage("X won!");
+ 			$('.row:nth-child(2)').addClass('strikeout');
  		} else if (middleRow === "OOO") {
  			setMessage("O WON!");
+ 			$('.row:nth-child(2)').addClass('strikeout');
  		}
- 	}	
+ 	}
+
+
 	startGame();
 
 });
