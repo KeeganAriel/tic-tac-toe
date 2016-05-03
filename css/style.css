@@ -41,14 +41,22 @@ body {
     border-bottom: none;
 }
 
-tr.strikeout .square:before {
-  content: "";
-  position: absolute;
-  border: 1px solid #111;
-  width: 19%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6.5%;
+.strikeout .square:before {
+     content: "";
+    position: absolute;
+    border: 1px solid #111;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.65em;
+}
+
+.strikeout1:before {
+    content: "";
+    position: static;
+    border: 1px solid #111;
+    width: 120px;
+ 
 }
 

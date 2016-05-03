@@ -17,7 +17,6 @@ $(document).ready(function(){
 		changeTurn();
 		setMessage(whosTurn + " gets to go now...");
 		whoWon();
-		console.log(whosTurn);
 	});
 
 	function changeTurn() {
@@ -33,7 +32,8 @@ $(document).ready(function(){
  		if (firstRow === "XXX") {
  			setMessage("X won!");
  			$(".row:first-child").addClass('strikeout');
- 		} else if (firstRow === "OOO") {
+ 		} 
+ 		else if (firstRow === "OOO") {
  			setMessage("O WON!");
  			$(".row:first-child").addClass('strikeout');
  		}
@@ -55,7 +55,14 @@ $(document).ready(function(){
  			setMessage("O WON!");
  			$('.row:nth-child(2)').addClass('strikeout');
  		}
- 	}
+
+ 		var middleCol = $('table tr > td:nth-child(2), table tr > th:nth-child(2) .square').text();
+ 			if (middleCol === "XXX") {
+ 			setMessage("X won!");
+ 			console.log('colTest, X win');
+ 			$('table tr > td:nth-child(2), table tr > th:nth-child(2)').addClass('strikeout1');
+ 		}
+	 	}
 
 
 	startGame();
