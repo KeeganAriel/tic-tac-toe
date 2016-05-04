@@ -56,6 +56,8 @@ $(document).ready(function(){
  			$('.row:nth-child(2)').addClass('strikeout');
  		}
 
+ 		
+
  		var middleCol = $('table tr > td:nth-child(2), table tr > th:nth-child(2) .square').text();
  			if (middleCol === "XXX") {
  			setMessage("X won!");
