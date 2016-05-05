@@ -7,29 +7,37 @@
 	<script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="intro" >
 		<h1>Wanna play Tic-Tac-Toe?</h1>
 		<div class="message">Messages will go here!</div>
 	</header>
-
 	<table class="board">
+<div class="diag1Strikeout">
+<div class="diag2Strikeout">
+
+
 	<tr class="row">
+		<td class="square" id="diag1"></td>
 		<td class="square"></td>
-		<td class="square"></td>
-		<td class="square"></td>
+		<td class="square" id="diag2"></td>
 	</tr>
 	<tr class="row">
 		<td class="square"></td>
-		<td class="square"></td>
+		<td class="square" id="diagMid"></td>
 		<td class="square"></td>
 	</tr>
 	<tr class="row">
+		<td class="square" id="diag2"></td>
 		<td class="square"></td>
-		<td class="square"></td>
-		<td class="square"></td>
+		<td class="square" id="diag1"></td>
 	</tr>
+	</div>
+	</div>
 	</table>
+	<!-- </div> -->
+	<button type="button">Start Over</button>
 </body>
 </html>
