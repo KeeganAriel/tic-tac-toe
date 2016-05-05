@@ -17,8 +17,6 @@ body {
 }
 
 .board {
-    width: 20.5em;
-    height: 20.5em;
     border-spacing:0;
     margin-left:auto; 
     margin-right:auto;
@@ -49,10 +47,10 @@ body {
 }
 
 .strikeout .square:before {
-    content: "";
+    content: " ";
     position: absolute;
     border: 1px solid #111;
-    width: 120px;
+    width: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,39 +58,25 @@ body {
 }
 
 .strikeout1:after {
-    content: "";
+    content: " ";
     position: absolute;
     border: 1px solid #111;
     height: 100%;
     left: 50%; 
-
  
 }
 
-.diag1Strikeout {
-    width: 40%;
-    border: 1.5px solid black;
-    margin-left: 29%;
-    -webkit-transform:
-        translateY(190px)
-        translateX(5px)
-        rotate(50deg); 
+.diag1Strikeout:after {
+    content: " ";
     position: absolute;
-    display: none;
+    border: 1px solid #111;
+    transform: rotate(-45deg) translateX(51px) translateY(-8px);
+    height: 142%;
+    left: 25%;
 }
 
 .diag2Strikeout {
-    width: 63%;
-    margin-left: 23%;
-    border-bottom: 2px solid black;
-    -webkit-transform:
-        translateY(132px)
-        translateX(-16px)
-        rotate(-50deg);
-    position: absolute;
-    top: 237px;
-    left: -22px;
-    display: none;
+    background-color: green;
 }
 
 
