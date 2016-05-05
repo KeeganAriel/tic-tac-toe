@@ -7,12 +7,18 @@ body {
 
 .intro {
 	text-align: center;
+    font-family: 'Crafty Girls', cursive;
 }
 
+.message {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    font-size: 1.2em;
+}
 
 .board {
-    width: 22.5em;
-    height: 22.5em;
+    width: 20.5em;
+    height: 20.5em;
     border-spacing:0;
     margin-left:auto; 
     margin-right:auto;
@@ -43,7 +49,7 @@ body {
 }
 
 .strikeout .square:before {
-     content: "";
+    content: "";
     position: absolute;
     border: 1px solid #111;
     width: 120px;
@@ -61,5 +67,53 @@ body {
     left: 50%; 
 
  
+}
+
+.diag1Strikeout {
+    width: 40%;
+    border: 1.5px solid black;
+    margin-left: 29%;
+    -webkit-transform:
+        translateY(190px)
+        translateX(5px)
+        rotate(50deg); 
+    position: absolute;
+    display: none;
+}
+
+.diag2Strikeout {
+    width: 63%;
+    margin-left: 23%;
+    border-bottom: 2px solid black;
+    -webkit-transform:
+        translateY(132px)
+        translateX(-16px)
+        rotate(-50deg);
+    position: absolute;
+    top: 237px;
+    left: -22px;
+    display: none;
+}
+
+
+button {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    font-family: 'Crafty Girls', cursive;
+    font-size: 1em;
+    border-radius: 3px;
+    border: none;
+    padding: .3em;
+
+}
+
+button:active {
+    background-color: black;
+    color: white;
+
+}
+
+button:focus {
+    outline:none;
 }
 
