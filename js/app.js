@@ -13,11 +13,15 @@ $(document).ready(function(){
 	}
 
 	$( ".square" ).click(function() {
-
+		// if ($('.square').html() !== "") {
 		$(this).html(whosTurn);
 		changeTurn();
 		setMessage(whosTurn + " gets to go now...");
 		whoWon();
+	// } else if ($('.square').html() === "X") {
+	// 	console.log('test');
+	// 	return false;
+	
 	});
 
 	function changeTurn() {

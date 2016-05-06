@@ -75,8 +75,13 @@ body {
     left: 25%;
 }
 
-.diag2Strikeout {
-    background-color: green;
+.diag2Strikeout:after {
+    content: " ";
+    position: absolute;
+    border: 1px solid #111;
+    transform: rotate(45deg) translateX(-9px) translateY(-52px);
+    height: 142%;
+    left: 25%;
 }
 
 
@@ -88,6 +93,7 @@ button {
     border-radius: 3px;
     border: none;
     padding: .3em;
+    background-color: lightgray;
 
 }
 
