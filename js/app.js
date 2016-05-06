@@ -13,15 +13,13 @@ $(document).ready(function(){
 	}
 
 	$( ".square" ).click(function() {
-		// if ($('.square').html() !== "") {
-		$(this).html(whosTurn);
-		changeTurn();
-		setMessage(whosTurn + " gets to go now...");
-		whoWon();
-	// } else if ($('.square').html() === "X") {
-	// 	console.log('test');
-	// 	return false;
-	
+		if ($(this).html() === "") {
+			$(this).html(whosTurn);
+			changeTurn();
+			setMessage(whosTurn + " gets to go now...");
+			whoWon();
+
+		}
 	});
 
 	function changeTurn() {
@@ -109,7 +107,15 @@ $(document).ready(function(){
 			$('.diag2').addClass('diag2Strikeout');
 		}
 
-	}	
+	}
+
+	$('.button' ).click(function() {	
+		setMessage();
+		startGame();
+		$( ".square" ).removeClass( "strikeout1 diag1Strikeout diag2Strikeout" );
+		$(".row").removeClass("strikeout");
+		$( ".square" ).empty();
+	});
 
 
 	startGame();
