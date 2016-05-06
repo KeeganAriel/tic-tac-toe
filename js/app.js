@@ -13,10 +13,15 @@ $(document).ready(function(){
 	}
 
 	$( ".square" ).click(function() {
+		// if ($('.square').html() !== "") {
 		$(this).html(whosTurn);
 		changeTurn();
 		setMessage(whosTurn + " gets to go now...");
 		whoWon();
+	// } else if ($('.square').html() === "X") {
+	// 	console.log('test');
+	// 	return false;
+	
 	});
 
 	function changeTurn() {
@@ -85,24 +90,23 @@ $(document).ready(function(){
 			$('td:nth-child(3)').addClass('strikeout1');
 		}
 
-		var diagonal1 = $('#diag1, #diagMid').text();
+		var diagonal1 = $('.diag1').text();
 		if (diagonal1 === "XXX") {
 			setMessage("X won!");
-			$('.diag1Strikeout').show();
+			$('.diag1').addClass('diag1Strikeout');
 		} else if (diagonal1 === "OOO") {
 			setMessage("O WON!");
-			$('.diag1Strikeout').show();
+			$('.diag1').addClass('diag1Strikeout');
 
 		}
 
-		var diagonal2 = $('#diag2, #diagMid').text();
+		var diagonal2 = $('.diag2').text();
 		if (diagonal2 === "XXX") {
 			setMessage("X won!");
-			// $('#diag1, #diagMid').addClass('diag2Strikeout');
-			$('.diag2Strikeout').show();
+			$('.diag2').addClass('diag2Strikeout');
 		} else if (diagonal2 === "OOO") {
 			setMessage("O WON!");
-			$('.diag2Strikeout').show();
+			$('.diag2').addClass('diag2Strikeout');
 		}
 
 	}	
