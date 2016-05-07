@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .intro {
@@ -46,8 +46,8 @@ h1 {
 }
 
 .message {
-    padding-bottom: 2em;
-    padding-top: 1em;
+    padding-bottom: 2.5em;
+    padding-top: .5em;
     font-size: 1.2em;
 }
 
@@ -121,8 +121,8 @@ h1 {
 
 
 button {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-family: 'Crafty Girls', cursive;
     font-size: 1em;
     border-radius: 3px;
