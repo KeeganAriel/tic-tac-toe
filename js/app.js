@@ -12,6 +12,7 @@ $(document).ready(function(){
 
 	}
 
+<<<<<<< HEAD
 	$( ".square" ).click(function() {
 		// if ($('.square').html() !== "") {
 		$(this).html(whosTurn);
@@ -23,6 +24,9 @@ $(document).ready(function(){
 	// 	return false;
 	
 	});
+=======
+
+>>>>>>> gh-pages
 
 	function changeTurn() {
 		if (whosTurn === "X") {
@@ -32,13 +36,27 @@ $(document).ready(function(){
 		}
 	}
 
+	$( ".square" ).click(function() {
+		if ($(this).html() === "") {
+			$(this).html(whosTurn);
+			changeTurn();
+			setMessage(whosTurn + " gets to go now...");
+			whoWon();
+
+		} 
+	});
+
+
+
 	function whoWon() {
 		var firstRow = $('.row:first-child .square').text();
 		if (firstRow === "XXX") {
 			setMessage("X won!");
 			$(".row:first-child").addClass('strikeout');
-			return false;
-		} 
+			// if ($('.message').on("X won!")) {
+			
+		// } 
+	}
 		else if (firstRow === "OOO") {
 			setMessage("O WON!");
 			$(".row:first-child").addClass('strikeout');
@@ -109,7 +127,16 @@ $(document).ready(function(){
 			$('.diag2').addClass('diag2Strikeout');
 		}
 
-	}	
+	}
+
+	$('.button' ).click(function() {	
+		setMessage();
+		startGame();
+		$( ".square" ).removeClass( "strikeout1 diag1Strikeout diag2Strikeout" );
+		$(".row").removeClass("strikeout");
+		$( ".square" ).empty();
+	});
+
 
 
 	startGame();

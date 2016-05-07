@@ -5,14 +5,49 @@ body {
 	  text-align:center
 	}
 
+.top, .bottom, .left, .right {
+  background: black;
+  position: fixed;
+}
+
+.left, .right {
+  top: 0; 
+  bottom: 0;
+  width: 1em;
+}
+.left { 
+  left: 0; 
+}
+
+.right { 
+  right: 0; 
+}
+
+.top, .bottom {
+  left: 0; 
+  right: 0;
+  height: 1em;
+}
+
+.top { 
+  top: 0; 
+}
+.bottom { 
+  bottom: 0; 
+}
+
+h1 {
+    padding-top: 1.5em;
+}
+
 .intro {
 	text-align: center;
     font-family: 'Crafty Girls', cursive;
 }
 
 .message {
-    padding-bottom: 2em;
-    padding-top: 1em;
+    padding-bottom: 2.5em;
+    padding-top: .5em;
     font-size: 1.2em;
 }
 
@@ -86,8 +121,8 @@ body {
 
 
 button {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-family: 'Crafty Girls', cursive;
     font-size: 1em;
     border-radius: 3px;
