@@ -12,21 +12,7 @@ $(document).ready(function(){
 
 	}
 
-<<<<<<< HEAD
-	$( ".square" ).click(function() {
-		// if ($('.square').html() !== "") {
-		$(this).html(whosTurn);
-		changeTurn();
-		setMessage(whosTurn + " gets to go now...");
-		whoWon();
-	// } else if ($('.square').html() === "X") {
-	// 	console.log('test');
-	// 	return false;
-	
-	});
-=======
 
->>>>>>> gh-pages
 
 	function changeTurn() {
 		if (whosTurn === "X") {
