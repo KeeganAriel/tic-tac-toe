@@ -81,7 +81,9 @@ h1 {
     border-bottom: none;
 }
 
-.strikeout .square:before {
+.strikeout:before {
+
+    /*change to befor for all strikeouts add strikeout and reomove retitives, content, ect.*/
     content: " ";
     position: absolute;
     border: 1px solid #111;
