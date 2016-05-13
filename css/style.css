@@ -81,12 +81,17 @@ h1 {
     border-bottom: none;
 }
 
-.strikeout:before {
-
-    /*change to befor for all strikeouts add strikeout and reomove retitives, content, ect.*/
+/*.strikeout:before {
     content: " ";
     position: absolute;
     border: 1px solid #111;
+}*/
+
+.strikeout:before {
+    content: " ";
+    position: absolute;
+    border: 1px solid #111;
+    /*change to befor for all strikeouts add strikeout and reomove retitives, content, ect.*/
     width: 128px;
     display: flex;
     justify-content: center;
@@ -94,7 +99,7 @@ h1 {
     margin-top: 0.65em;
 }
 
-.strikeout1:after {
+.strikeout1:before {
     content: " ";
     position: absolute;
     border: 1px solid #111;
@@ -103,7 +108,7 @@ h1 {
  
 }
 
-.diag1Strikeout:after {
+.diag1Strikeout:before {
     content: " ";
     position: absolute;
     border: 1px solid #111;
@@ -112,7 +117,7 @@ h1 {
     left: 25%;
 }
 
-.diag2Strikeout:after {
+.diag2Strikeout:before {
     content: " ";
     position: absolute;
     border: 1px solid #111;
