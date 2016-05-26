@@ -57,8 +57,6 @@ h1 {
     margin-right:auto;
 }
 
-
-
 .square {
     text-align: center;
     font-family: 'Coming Soon', cursive;
@@ -73,6 +71,7 @@ h1 {
     position: relative;
 }
 
+
 .square:last-child {
     border-right: none;
 }
@@ -81,11 +80,13 @@ h1 {
     border-bottom: none;
 }
 
-/*.strikeout:before {
+@media (min-width: 640px) {
+
+.strikeout .square:before {
     content: " ";
     position: absolute;
     border: 1px solid #111;
-}*/
+}
 
 .strikeout:before {
     content: " ";
@@ -126,6 +127,25 @@ h1 {
     left: 25%;
 }
 
+}
+
+@media(max-width: 639px) {
+    .strikeout .square {
+        background-color: red
+    }
+
+    .strikeout1 {
+         background-color: red
+    }
+
+    .diag1Strikeout {
+         background-color: red
+    }
+
+    .diag2Strikeout {
+         background-color: red
+    }
+}
 
 button {
     margin-top: 2em;
