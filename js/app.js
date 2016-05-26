@@ -75,7 +75,7 @@ $(document).ready(function(){
 	$('.button' ).click(function() {	
 		setMessage();
 		startGame();
-		$( ".square" ).removeClass( "strikeout1 diag1Strikeout diag2Strikeout" );
+		$( ".square" ).removeClass( "strikeout strikeout1 diag1Strikeout diag2Strikeout" );
 		$(".row").removeClass("strikeout");
 		$( ".square" ).empty();
 		gameOver = false;
