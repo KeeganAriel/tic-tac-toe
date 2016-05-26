@@ -60,14 +60,14 @@ $(document).ready(function(){
 		// check diags
 		var selector = '.diag1';
 		var values = $(selector).text();
-			if (values === 'XXX' || values === 'OOO') {
-				setWinner(values, selector, 'diag1Strikeout');
-			}
+		if (values === 'XXX' || values === 'OOO') {
+			setWinner(values, selector, 'diag1Strikeout');
+		}
 
 		var selector = '.diag2';
 		var values = $(selector).text();
-			if (values === 'XXX' || values === 'OOO') {
-				setWinner(values, selector, 'diag2Strikeout');
+		if (values === 'XXX' || values === 'OOO') {
+			setWinner(values, selector, 'diag2Strikeout');
 		}
 
 	}
