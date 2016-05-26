@@ -132,19 +132,19 @@ h1 {
 
 @media(max-width: 639px) {
     .strikeout {
-        background-color: red
+        background-color: lightgray
     }
 
     .strikeout1 {
-         background-color: red
+         background-color: lightgray
     }
 
     .diag1Strikeout {
-         background-color: red
+         background-color: lightgray
     }
 
     .diag2Strikeout {
-         background-color: red
+         background-color: lightgray
     }
 }
 
