@@ -2,8 +2,8 @@
 	box-sizing: border-box;
 }
 body {
-	  text-align:center
-	}
+ text-align:center
+}
 
 .top, .bottom, .left, .right {
   background: black;
@@ -55,7 +55,7 @@ h1 {
     border-spacing:0;
     margin-left:auto; 
     margin-right:auto;
-    max-width: 85%;
+    /*max-width: 80%;*/
 }
 
 .square {
@@ -83,69 +83,83 @@ h1 {
 
 @media (min-width: 640px) {
 
-.strikeout .square:before {
-    content: " ";
-    position: absolute;
-    border: 1px solid #111;
-}
+    .strikeout .square:before {
+        content: " ";
+        position: absolute;
+        border: 1px solid #111;
+    }
 
-.strikeout:before {
-    content: " ";
-    position: absolute;
-    border: 1px solid #111;
-    /*change to befor for all strikeouts add strikeout and reomove retitives, content, ect.*/
-    width: 128px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.65em;
-}
+    .strikeout:before {
+        content: " ";
+        position: absolute;
+        border: 1px solid #111;
+        /*change to befor for all strikeouts add strikeout and reomove retitives, content, ect.*/
+        width: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.65em;
+    }
 
-.strikeout1:before {
-    content: " ";
-    position: absolute;
-    border: 1px solid #111;
-    height: 100%;
-    left: 50%; 
- 
-}
+    .strikeout1:before {
+        content: " ";
+        position: absolute;
+        border: 1px solid #111;
+        height: 100%;
+        left: 50%; 
+        
+    }
 
-.diag1Strikeout:before {
-    content: " ";
-    position: absolute;
-    border: 1px solid #111;
-    transform: rotate(-45deg) translateX(51px) translateY(-8px);
-    height: 142%;
-    left: 25%;
-}
+    .diag1Strikeout:before {
+        content: " ";
+        position: absolute;
+        border: 1px solid #111;
+        transform: rotate(-45deg) translateX(51px) translateY(-8px);
+        height: 142%;
+        left: 25%;
+    }
 
-.diag2Strikeout:before {
-    content: " ";
-    position: absolute;
-    border: 1px solid #111;
-    transform: rotate(45deg) translateX(-9px) translateY(-52px);
-    height: 142%;
-    left: 25%;
-}
+    .diag2Strikeout:before {
+        content: " ";
+        position: absolute;
+        border: 1px solid #111;
+        transform: rotate(45deg) translateX(-9px) translateY(-52px);
+        height: 142%;
+        left: 25%;
+    }
 
 }
 
 @media(max-width: 639px) {
+
+    .board {
+        max-width: 80%
+    }
+
+    h1 {
+        padding-top: .2em;
+        margin-bottom: .2em;
+    }
+
+    .message {
+        padding-bottom: 1em;
+    }
+
     .strikeout {
         background-color: lightgray
     }
 
     .strikeout1 {
-         background-color: lightgray
-    }
+       background-color: lightgray
+   }
 
-    .diag1Strikeout {
-         background-color: lightgray
-    }
+   .diag1Strikeout {
+       background-color: lightgray
+   }
 
-    .diag2Strikeout {
-         background-color: lightgray
-    }
+   .diag2Strikeout {
+       background-color: lightgray
+   }
 }
 
 button {
