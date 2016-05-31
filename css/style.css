@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body {
-   text-align:center
+ text-align:center
 }
 
 .top, .bottom, .left, .right {
@@ -106,8 +106,7 @@ h1 {
         position: absolute;
         border: 1px solid #111;
         height: 100%;
-        left: 50%; 
-        
+        left: 50%;       
     }
 
     .diag1Strikeout:before {
@@ -171,18 +170,18 @@ h1 {
     }
 
     .strikeout1 {
-     background-color: lightgray
- }
+       background-color: lightgray
+   }
 
- .diag1Strikeout {
-     background-color: lightgray
- }
+   .diag1Strikeout {
+       background-color: lightgray
+   }
 
- .diag2Strikeout {
-     background-color: lightgray
- }
+   .diag2Strikeout {
+       background-color: lightgray
+   }
 
- .socialIcons {
+   .socialIcons {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -191,21 +190,20 @@ h1 {
     height: 0;
     position: absolute;
     bottom: 4em;
-
-}
-
-.fa {
-    color: #A3A3A3;
-    padding-bottom: .2em;
-}
-
-.btn-github-alt {
-    margin-right: 6.1em;
     }
 
-.btn-info-circle {
-    margin-left: 7.1em;
-}
+    .fa {
+        color: #A3A3A3;
+        padding-bottom: .2em;
+    }
+
+    .btn-github-alt {
+        margin-right: 6.1em;
+    }
+
+    .btn-info-circle {
+        margin-left: 7.1em;
+    }
 }
 
 
