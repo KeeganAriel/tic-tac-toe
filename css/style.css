@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body {
- text-align:center
+   text-align:center
 }
 
 .top, .bottom, .left, .right {
@@ -15,6 +15,7 @@ body {
   bottom: 0;
   width: 1em;
 }
+
 .left { 
   left: 0; 
 }
@@ -32,12 +33,13 @@ body {
 .top { 
   top: 0; 
 }
+
 .bottom { 
   bottom: 0; 
 }
 
 h1 {
-    padding-top: 1.5em;
+    padding-top: .5em;
 }
 
 .intro {
@@ -55,7 +57,6 @@ h1 {
     border-spacing:0;
     margin-left:auto; 
     margin-right:auto;
-    /*max-width: 80%;*/
 }
 
 .square {
@@ -144,7 +145,7 @@ h1 {
 
     .message {
         padding-bottom: 1em;
-            font-size: .95em;
+        font-size: .95em;
     }
 
     .board {
@@ -156,16 +157,16 @@ h1 {
     }
 
     .strikeout1 {
-       background-color: lightgray
-   }
+     background-color: lightgray
+ }
 
-   .diag1Strikeout {
-       background-color: lightgray
-   }
+ .diag1Strikeout {
+     background-color: lightgray
+ }
 
-   .diag2Strikeout {
-       background-color: lightgray
-   }
+ .diag2Strikeout {
+     background-color: lightgray
+ }
 }
 
 button {
@@ -173,6 +174,7 @@ button {
     margin-bottom: 2em;
     font-family: 'Crafty Girls', cursive;
     font-size: 1em;
+    font-weight: bold;
     border-radius: 3px;
     border: none;
     padding: .3em;
@@ -188,5 +190,21 @@ button:active {
 
 button:focus {
     outline:none;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2em 0 0 1.5em;
+    width: 0;
+    height: 0;
+
+}
+
+.fa {
+    color: lightgray;
+    padding-bottom: .2em;
 }
 
