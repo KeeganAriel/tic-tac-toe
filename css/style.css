@@ -132,7 +132,7 @@ h1 {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin: 2em 0 0 1.5em;
+        margin: -6.5em 0 0 1.5em;
         width: 0;
         height: 0;
     }
@@ -147,7 +147,6 @@ h1 {
 
     .board {
         max-width: 80%
-
     }
 
     h1 {
